@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_projects"
+        android:title="@string/item_projects_title"
+        android:icon="@drawable/ic_projects"/>
+
+    <item
+        android:id="@+id/item_tasks"
+        android:title="@string/item_tasks_title"
+        android:icon="@drawable/ic_tasks"/>
+
+    <item
+        android:id="@+id/item_completed"
+        android:title="@string/item_completed_title"
+        android:icon="@drawable/ic_completed"/>
+</menu>

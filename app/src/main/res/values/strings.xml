@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProjectTracker</string>
+
+    <!-- Bottom Navigation item titles -->
+    <string name="item_projects_title">Projects</string>
+    <string name="item_tasks_title">Tasks</string>
+    <string name="item_completed_title">Completed</string>
+</resources>
