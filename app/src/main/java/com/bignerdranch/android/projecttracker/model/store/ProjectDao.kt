@@ -2,7 +2,7 @@ package com.bignerdranch.android.projecttracker.model.store
 
 import android.arch.persistence.room.*
 import com.bignerdranch.android.projecttracker.model.Project
-import io.reactivex.Flowable
+import io.reactivex.Single
 
 @Dao
 interface ProjectDao {
@@ -16,5 +16,5 @@ interface ProjectDao {
     fun deleteProject(project: Project)
 
     @Query("SELECT * FROM project")
-    fun getAllProjects(): Flowable<Project>
+    fun getAllProjects(): Single<List<Project>>
 }
