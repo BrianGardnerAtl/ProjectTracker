@@ -1,4 +1,4 @@
-package com.bignerdranch.android.projecttracker.controller
+package com.bignerdranch.android.projecttracker.controller.list
 
 
 import android.databinding.DataBindingUtil

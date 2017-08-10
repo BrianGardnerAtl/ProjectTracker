@@ -1,8 +1,8 @@
 package com.bignerdranch.android.projecttracker.inject
 
-import com.bignerdranch.android.projecttracker.controller.CompletedListFragment
-import com.bignerdranch.android.projecttracker.controller.ProjectListFragment
-import com.bignerdranch.android.projecttracker.controller.TaskListFragment
+import com.bignerdranch.android.projecttracker.controller.list.CompletedListFragment
+import com.bignerdranch.android.projecttracker.controller.list.ProjectListFragment
+import com.bignerdranch.android.projecttracker.controller.list.TaskListFragment
 import dagger.Component
 
 @Component(modules = arrayOf(AppModule::class, DatabaseModule::class))
