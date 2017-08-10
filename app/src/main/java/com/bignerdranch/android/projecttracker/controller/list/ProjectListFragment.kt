@@ -15,6 +15,11 @@ class ProjectListFragment : Fragment() {
 
     lateinit var binding: FragmentListBinding
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        activity.setTitle(R.string.item_projects_title)
+    }
+
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container, false)
 
