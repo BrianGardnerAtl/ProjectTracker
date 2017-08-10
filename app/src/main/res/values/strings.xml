@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">ProjectTracker</string>
 
+    <!-- Create Screen Titles -->
+    <string name="create_project_title">New Project</string>
+    <string name="create_task_title">New Task</string>
+
     <!-- Bottom Navigation item titles -->
     <string name="item_projects_title">Projects</string>
     <string name="item_tasks_title">Tasks</string>
