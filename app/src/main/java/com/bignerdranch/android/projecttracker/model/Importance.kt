@@ -1,7 +1,7 @@
 package com.bignerdranch.android.projecttracker.model
 
-enum class Importance {
-    HIGH,
-    NORMAL,
-    LOW;
+enum class Importance(val value: String) {
+    HIGH("HIGH"),
+    NORMAL("HIGH"),
+    LOW("HIGH");
 }
