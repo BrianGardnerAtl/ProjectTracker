@@ -17,4 +17,7 @@ interface TaskDao {
 
     @Query("SELECT * FROM task")
     fun getAllTasks(): Flowable<Task>
+
+    @Query("SELECT * FROM task WHERE completed_date IS NOT NULL")
+    fun getCompletedTasks(): Flowable<Task>
 }
