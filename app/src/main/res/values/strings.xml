@@ -9,4 +9,7 @@
     <string name="item_projects_title">Projects</string>
     <string name="item_tasks_title">Tasks</string>
     <string name="item_completed_title">Completed</string>
+
+    <!-- Project view model strings -->
+    <string name="project_number_of_tasks">%1$d tasks</string>
 </resources>
