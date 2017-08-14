@@ -24,6 +24,7 @@ class ProjectListFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container, false)
         binding.addItem.setOnClickListener(addItemListener)
+        setupAdapter()
 
         return binding.root
     }
@@ -31,5 +32,9 @@ class ProjectListFragment : Fragment() {
     private var addItemListener = View.OnClickListener {
         val intent = Intent(activity, CreateProjectActivity::class.java)
         startActivity(intent)
+    }
+
+    private fun setupAdapter() {
+
     }
 }
