@@ -12,4 +12,8 @@
 
     <!-- Project view model strings -->
     <string name="project_number_of_tasks">%1$d tasks</string>
+
+    <!-- create project screen -->
+    <string name="project_name">Project Name</string>
+    <string name="save_project">Save Project</string>
 </resources>
