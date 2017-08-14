@@ -20,6 +20,7 @@ class CompletedListFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container, false)
+        binding.addItem.visibility = View.GONE
 
         return binding.root
     }
