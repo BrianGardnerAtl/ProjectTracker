@@ -10,14 +10,14 @@ import com.bignerdranch.android.projecttracker.R
 import com.bignerdranch.android.projecttracker.databinding.FragmentCreateProjectBinding
 import com.bignerdranch.android.projecttracker.extension.graph
 import com.bignerdranch.android.projecttracker.model.Project
-import com.bignerdranch.android.projecttracker.model.store.ProjectDao
+import com.bignerdranch.android.projecttracker.model.store.ProjectStore
 import javax.inject.Inject
 
 class CreateProjectFragment : Fragment() {
 
     lateinit var binding: FragmentCreateProjectBinding
     @Inject
-    lateinit var projectDao: ProjectDao
+    lateinit var projectStore: ProjectStore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,8 +39,9 @@ class CreateProjectFragment : Fragment() {
     private fun saveNewProject() {
         val projectName = binding.projectName.text.toString()
         if (projectName.isNotEmpty()) {
-            val project = Project(projectName)
-            projectDao.insertProject(project)
+            val project = Project()
+            project.name = projectName
+            projectStore.insertProject(project)
             activity.finish()
         }
     }
