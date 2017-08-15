@@ -1,4 +1,4 @@
-package com.bignerdranch.android.projecttracker.model.store
+package com.bignerdranch.android.projecttracker.model.store.dao
 
 import android.arch.persistence.room.*
 import com.bignerdranch.android.projecttracker.model.Task

@@ -3,7 +3,7 @@ package com.bignerdranch.android.projecttracker.inject
 import android.arch.persistence.room.Room
 import android.content.Context
 import com.bignerdranch.android.projecttracker.model.store.AppDatabase
-import com.bignerdranch.android.projecttracker.model.store.ProjectDao
+import com.bignerdranch.android.projecttracker.model.store.dao.ProjectDao
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named

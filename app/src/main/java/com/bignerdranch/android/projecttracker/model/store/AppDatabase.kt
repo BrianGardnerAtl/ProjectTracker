@@ -7,6 +7,8 @@ import com.bignerdranch.android.projecttracker.model.Project
 import com.bignerdranch.android.projecttracker.model.Task
 import com.bignerdranch.android.projecttracker.model.store.converter.DateConverter
 import com.bignerdranch.android.projecttracker.model.store.converter.ImportanceConverter
+import com.bignerdranch.android.projecttracker.model.store.dao.ProjectDao
+import com.bignerdranch.android.projecttracker.model.store.dao.TaskDao
 
 @Database(entities = arrayOf(Project::class, Task::class),
           version = 1)
